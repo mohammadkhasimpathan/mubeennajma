@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, ArrowUp, Download, Send } from 'lucide-react';
+import { Mail, ArrowUp, Download, Send, Eye } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import profile from '@/data/profile.json';
 
@@ -27,6 +27,43 @@ const footerLinks = [
     ],
   },
 ];
+
+function VisitorCounter() {
+  const [count, setCount] = useState<number | null>(null);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    fetch('https://api.counterapi.dev/v1/mubeen-portfolio/visits/up')
+      .then(res => {
+        if (!res.ok) throw new Error();
+        return res.json();
+      })
+      .then(data => setCount(data.count))
+      .catch(() => setError(true));
+  }, []);
+
+  return (
+    <div title="Total Portfolio Visits" className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-violet-500/20 text-sm font-medium mt-4 shadow-[0_0_15px_rgba(139,92,246,0.15)] transition-all hover:border-violet-500/40">
+      <Eye size={16} className="text-violet-400" />
+      {error ? (
+        <span className="text-slate-400">Visitors: --</span>
+      ) : count === null ? (
+        <div className="w-24 h-4 rounded-md bg-white/10 animate-pulse"></div>
+      ) : (
+        <motion.div
+          initial={{ opacity: 0, y: 5 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex items-center gap-1.5"
+        >
+          <span className="font-['Space_Grotesk'] font-bold text-white tracking-wide">
+            {new Intl.NumberFormat('en-US').format(count)}
+          </span>
+          <span className="text-slate-400 font-normal">Portfolio Visitors</span>
+        </motion.div>
+      )}
+    </div>
+  );
+}
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -146,10 +183,13 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/6">
-          <p className="text-slate-500 text-sm text-center">
-            © {new Date().getFullYear()} Shaik Mubeen Najma. Crafted with ❤️ and lots of ☕
-          </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col items-center sm:items-start">
+            <p className="text-slate-500 text-sm text-center sm:text-left mb-1">
+              © {new Date().getFullYear()} Shaik Mubeen Najma.<br className="sm:hidden" /> Crafted with ❤️ and lots of ☕
+            </p>
+            <VisitorCounter />
+          </div>
+          <div className="flex items-center gap-4 mt-2 sm:mt-0">
             <span className="text-slate-600 text-xs">Built with React + Vite</span>
             <button
               onClick={scrollToTop}
