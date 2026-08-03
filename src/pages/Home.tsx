@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { useTypingEffect } from '@/hooks';
 import { fadeInUp, staggerContainer } from '@/animations/variants';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { Skeleton } from '@/components/ui/Skeleton';
 import profile from '@/data/profile.json';
 import techstack from '@/data/techstack.json';
 import type { TechItem } from '@/types';

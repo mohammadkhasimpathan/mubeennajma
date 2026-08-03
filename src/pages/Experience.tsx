@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, MapPin, Calendar, ExternalLink } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { staggerContainer, fadeInUp, timelineItem } from '@/animations/variants';
+import { fadeInUp, timelineItem } from '@/animations/variants';
 import experienceData from '@/data/experience.json';
 import type { Experience } from '@/types';
 

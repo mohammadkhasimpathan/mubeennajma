@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, Trophy, Calendar } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { staggerContainer, fadeInUp } from '@/animations/variants';
+import { fadeInUp } from '@/animations/variants';
 import hackathonsData from '@/data/hackathons.json';
 import type { Hackathon } from '@/types';
 

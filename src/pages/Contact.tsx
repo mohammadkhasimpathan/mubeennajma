@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { fadeInLeft, fadeInRight, fadeInUp } from '@/animations/variants';
+import { fadeInLeft, fadeInRight } from '@/animations/variants';
 import profile from '@/data/profile.json';
 
 interface ContactForm {
