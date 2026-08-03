@@ -28,8 +28,9 @@ const footerLinks = [
   },
 ];
 
-function VisitorCounter() {
-  const [count, setCount] = useState<number | null>(null);
+const VisitorCounter = React.memo(() => {
+  const [count, setCount] = useState<number>(0);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -38,13 +39,17 @@ function VisitorCounter() {
         if (!res.ok) throw new Error();
         return res.json();
       })
-      .then(data => setCount(data.count))
-      .catch(() => setError(true));
+      .then(data => {
+        setCount(data.count);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError(true);
+        setLoading(false);
+      });
   }, []);
 
-  const formatCount = (num: number) => {
-    return new Intl.NumberFormat('en-US').format(num).split('');
-  };
+  const formattedCount = String(count).padStart(4, '0').split('');
 
   return (
     <div title="Total unique visitors to this portfolio" className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
@@ -62,46 +67,35 @@ function VisitorCounter() {
       <div className="flex items-end gap-2">
         {error ? (
           <span className="text-slate-500 text-sm">--</span>
-        ) : count === null ? (
-          <div className="flex gap-1">
-            {[1, 2, 3, 4].map(i => (
-              <div key={i} className="w-7 h-9 rounded-lg bg-white/5 animate-pulse"></div>
-            ))}
-          </div>
         ) : (
           <div className="flex items-end gap-0.5">
-            {formatCount(count).map((char, index) => (
-              char === ',' ? (
-                <span key={index} className="text-white/50 font-['Space_Grotesk'] font-bold text-lg mb-0.5 px-0.5">
-                  ,
-                </span>
-              ) : (
-                <div key={index} className="w-7 h-10 flex items-center justify-center rounded-lg glass border border-violet-500/30 shadow-[0_4px_15px_rgba(139,92,246,0.15)] overflow-hidden bg-black/40">
-                  <motion.span
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ 
-                      duration: 0.6, 
-                      delay: index * 0.1, 
-                      type: "spring",
-                      stiffness: 100
-                    }}
-                    className="text-white font-['Space_Grotesk'] font-bold text-lg"
-                  >
-                    {char}
-                  </motion.span>
-                </div>
-              )
+            {formattedCount.map((char, index) => (
+              <div key={index} className={`w-7 h-10 flex items-center justify-center rounded-lg glass border border-violet-500/30 shadow-[0_4px_15px_rgba(139,92,246,0.15)] overflow-hidden bg-black/40 ${loading ? 'opacity-50' : 'opacity-100'} transition-opacity duration-300`}>
+                <motion.span
+                  key={`${index}-${char}`}
+                  initial={{ y: loading ? 0 : 20, opacity: loading ? 1 : 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ 
+                    duration: 0.3, 
+                    type: "spring",
+                    stiffness: 120,
+                    damping: 15
+                  }}
+                  className="text-white font-['Space_Grotesk'] font-bold text-lg"
+                >
+                  {char}
+                </motion.span>
+              </div>
             ))}
           </div>
         )}
-        {!error && count !== null && (
+        {!error && !loading && (
           <span className="text-xs text-slate-500 ml-1.5 mb-1.5 hidden sm:block">Portfolio Visitors</span>
         )}
       </div>
     </div>
   );
-}
+});
 
 export default function Footer() {
   const [email, setEmail] = useState('');
