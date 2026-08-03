@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { fadeInLeft, fadeInRight } from '@/animations/variants';
@@ -106,7 +106,6 @@ export default function Contact() {
                 {[
                   { icon: FaGithub, href: profile.social.github, label: 'GitHub' },
                   { icon: FaLinkedin, href: profile.social.linkedin, label: 'LinkedIn' },
-                  { icon: FaTwitter, href: profile.social.twitter, label: 'Twitter' },
                 ].map(({ icon: Icon, href, label }) => (
                   <motion.a
                     key={label}

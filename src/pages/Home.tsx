@@ -98,13 +98,15 @@ export default function Home() {
 
           {/* Name */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-['Space_Grotesk'] text-white mb-4 leading-tight"
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black font-['Space_Grotesk'] tracking-tighter leading-[1.1] mb-6"
           >
-            Shaik{' '}
-            <span className="gradient-text">Mubeen</span>
+            <span className="text-white">Shaik </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] via-[#6D28D9] to-[#3B82F6] filter drop-shadow-lg">
+              Mubeen
+            </span>
             <br />
             <span className="text-white">Najma</span>
           </motion.h1>
@@ -139,7 +141,7 @@ export default function Home() {
           >
             <a
               href={profile.resumeUrl}
-              download
+              download="Shaik_Mubeen_Najma_Resume.pdf"
               className="flex items-center gap-2 px-6 py-3 rounded-xl text-white font-medium transition-all hover:opacity-90 hover:shadow-lg"
               style={{ background: 'linear-gradient(135deg, #8B5CF6, #6D28D9)' }}
             >

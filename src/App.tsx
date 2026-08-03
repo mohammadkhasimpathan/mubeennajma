@@ -113,7 +113,7 @@ function AppInner() {
       <CustomCursor />
       <ScrollProgress />
       <Navbar onCommandPalette={() => setCommandPaletteOpen(true)} />
-      <main className="relative">
+      <main className="relative z-10 bg-transparent flex-1">
         <RouteChangeHandler />
         <AnimatedRoutes />
       </main>

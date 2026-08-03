@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail, ArrowUp, Download, Send } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import profile from '@/data/profile.json';
 
 const footerLinks = [
@@ -66,7 +66,6 @@ export default function Footer() {
               {[
                 { icon: FaGithub, href: profile.social.github, label: 'GitHub' },
                 { icon: FaLinkedin, href: profile.social.linkedin, label: 'LinkedIn' },
-                { icon: FaTwitter, href: profile.social.twitter, label: 'Twitter' },
                 { icon: Mail, href: profile.social.email, label: 'Email' },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a
@@ -136,7 +135,7 @@ export default function Footer() {
             {/* Download Resume */}
             <a
               href={profile.resumeUrl}
-              download
+              download="Shaik_Mubeen_Najma_Resume.pdf"
               className="mt-4 flex items-center gap-2 text-sm text-slate-400 hover:text-violet-400 transition-colors"
             >
               <Download size={14} />

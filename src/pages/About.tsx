@@ -75,7 +75,7 @@ export default function About() {
                 Electronics Engineer turned{' '}
                 <span className="gradient-text">Full Stack Developer</span>
               </h2>
-              <p className="text-slate-400 leading-relaxed mb-6">
+              <p className="text-slate-400 text-justify leading-relaxed md:leading-loose mb-6">
                 {profile.bio}
               </p>
 
@@ -102,7 +102,7 @@ export default function About() {
 
               <a
                 href={profile.resumeUrl}
-                download
+                download="Shaik_Mubeen_Najma_Resume.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white font-medium transition-all hover:opacity-90"
                 style={{ background: 'linear-gradient(135deg, #8B5CF6, #6D28D9)' }}
               >
