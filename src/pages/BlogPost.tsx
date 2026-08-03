@@ -66,7 +66,7 @@ export default function BlogPost() {
   const gradient = gradients[currentIndex % gradients.length];
 
   return (
-    <div className="min-h-screen pt-24 pb-24">
+    <div className="min-h-screen pt-32 pb-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Back */}
