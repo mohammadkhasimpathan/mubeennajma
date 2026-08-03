@@ -42,25 +42,63 @@ function VisitorCounter() {
       .catch(() => setError(true));
   }, []);
 
+  const formatCount = (num: number) => {
+    return new Intl.NumberFormat('en-US').format(num).split('');
+  };
+
   return (
-    <div title="Total Portfolio Visits" className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-violet-500/20 text-sm font-medium mt-4 shadow-[0_0_15px_rgba(139,92,246,0.15)] transition-all hover:border-violet-500/40">
-      <Eye size={16} className="text-violet-400" />
-      {error ? (
-        <span className="text-slate-400">Visitors: --</span>
-      ) : count === null ? (
-        <div className="w-24 h-4 rounded-md bg-white/10 animate-pulse"></div>
-      ) : (
-        <motion.div
-          initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="flex items-center gap-1.5"
-        >
-          <span className="font-['Space_Grotesk'] font-bold text-white tracking-wide">
-            {new Intl.NumberFormat('en-US').format(count)}
-          </span>
-          <span className="text-slate-400 font-normal">Portfolio Visitors</span>
-        </motion.div>
-      )}
+    <div title="Total unique visitors to this portfolio" className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+      {/* Badge / Label */}
+      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-white/5 text-xs font-medium text-slate-300 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+        <div className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+        </div>
+        <Eye size={14} className="text-violet-400" />
+        <span className="tracking-wider">LIVE</span>
+      </div>
+
+      {/* Odometer Display */}
+      <div className="flex items-end gap-2">
+        {error ? (
+          <span className="text-slate-500 text-sm">--</span>
+        ) : count === null ? (
+          <div className="flex gap-1">
+            {[1, 2, 3, 4].map(i => (
+              <div key={i} className="w-7 h-9 rounded-lg bg-white/5 animate-pulse"></div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex items-end gap-0.5">
+            {formatCount(count).map((char, index) => (
+              char === ',' ? (
+                <span key={index} className="text-white/50 font-['Space_Grotesk'] font-bold text-lg mb-0.5 px-0.5">
+                  ,
+                </span>
+              ) : (
+                <div key={index} className="w-7 h-10 flex items-center justify-center rounded-lg glass border border-violet-500/30 shadow-[0_4px_15px_rgba(139,92,246,0.15)] overflow-hidden bg-black/40">
+                  <motion.span
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ 
+                      duration: 0.6, 
+                      delay: index * 0.1, 
+                      type: "spring",
+                      stiffness: 100
+                    }}
+                    className="text-white font-['Space_Grotesk'] font-bold text-lg"
+                  >
+                    {char}
+                  </motion.span>
+                </div>
+              )
+            ))}
+          </div>
+        )}
+        {!error && count !== null && (
+          <span className="text-xs text-slate-500 ml-1.5 mb-1.5 hidden sm:block">Portfolio Visitors</span>
+        )}
+      </div>
     </div>
   );
 }
@@ -182,15 +220,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/6">
-          <div className="flex flex-col items-center sm:items-start">
-            <p className="text-slate-500 text-sm text-center sm:text-left mb-1">
-              © {new Date().getFullYear()} Shaik Mubeen Najma.<br className="sm:hidden" /> Crafted with ❤️ and lots of ☕
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 pt-8 border-t border-white/6">
+          {/* Left Side: Copyright */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+            <p className="text-slate-500 text-sm mb-1">
+              © {new Date().getFullYear()} Shaik Mubeen Najma.
             </p>
-            <VisitorCounter />
+            <p className="text-slate-500 text-sm">
+              Crafted with ❤️ and lots of ☕
+            </p>
           </div>
-          <div className="flex items-center gap-4 mt-2 sm:mt-0">
-            <span className="text-slate-600 text-xs">Built with React + Vite</span>
+          
+          {/* Right Side: Odometer & Top Scroll */}
+          <div className="flex flex-col sm:flex-row items-center gap-6 order-1 lg:order-2">
+            <VisitorCounter />
+            <div className="hidden sm:block w-px h-8 bg-white/10"></div>
             <button
               onClick={scrollToTop}
               className="flex items-center gap-1.5 text-xs text-slate-500 hover:text-violet-400 transition-colors"
