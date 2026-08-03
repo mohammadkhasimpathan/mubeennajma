@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ecommerce",
+    "title": "E-Commerce Website",
+    "shortDescription": "A full-featured online shopping platform with user authentication, product catalog, cart, and payment integration.",
+    "description": "A comprehensive e-commerce solution built with React and Node.js. Features include user registration/login with JWT authentication, dynamic product catalog with search and filter, shopping cart with persistent state, order management, and a responsive admin dashboard for product and inventory management.",
+    "image": "/assets/projects/ecommerce.jpg",
+    "images": [
+      "/assets/projects/ecommerce.jpg",
+      "/assets/projects/ecommerce-2.jpg"
+    ],
+    "technologies": ["React", "Node.js", "MySQL", "Bootstrap", "JWT", "REST API"],
+    "category": "Full Stack",
+    "featured": true,
+    "githubUrl": "https://github.com/mubeennajma/ecommerce",
+    "liveUrl": "#",
+    "features": [
+      "User authentication with JWT",
+      "Dynamic product catalog with search & filter",
+      "Shopping cart with persistent state",
+      "Order tracking and history",
+      "Responsive admin dashboard",
+      "Payment gateway integration"
+    ],
+    "challenges": "Implementing real-time inventory management while maintaining consistency across multiple concurrent user sessions was the primary challenge. Solved using optimistic UI updates with server-side validation.",
+    "status": "Completed",
+    "year": "2024"
+  },
+  {
+    "id": "movie-ticket",
+    "title": "Movie Ticket Booking",
+    "shortDescription": "An interactive movie ticket booking platform with seat selection, booking management, and digital ticket generation.",
+    "description": "A full-stack movie ticket booking system that enables users to browse currently running movies, select showtimes, interactively pick seats, and book tickets online. The system generates unique booking IDs and provides digital ticket downloads with QR codes.",
+    "image": "/assets/projects/movie-ticket.jpg",
+    "images": [
+      "/assets/projects/movie-ticket.jpg"
+    ],
+    "technologies": ["Java", "MySQL", "HTML", "CSS", "JavaScript", "Servlet", "JSP"],
+    "category": "Full Stack",
+    "featured": true,
+    "githubUrl": "https://github.com/mubeennajma/movie-ticket",
+    "liveUrl": "#",
+    "features": [
+      "Interactive seat selection grid",
+      "Real-time seat availability updates",
+      "Multiple showtime booking",
+      "Digital ticket generation with QR code",
+      "Booking history and cancellation",
+      "Movie search and filter by genre"
+    ],
+    "challenges": "Handling concurrent seat bookings to prevent double-booking required implementing database-level transaction locks and optimistic locking patterns in the Java backend.",
+    "status": "Completed",
+    "year": "2024"
+  },
+  {
+    "id": "traffic-monitoring",
+    "title": "Traffic Monitoring System",
+    "shortDescription": "An IoT-based intelligent traffic monitoring system using sensors and computer vision for real-time traffic analysis.",
+    "description": "An IoT-powered traffic monitoring solution that uses sensor arrays and embedded algorithms to detect vehicle density, analyze traffic flow, and dynamically adjust signal timings. The system includes a web dashboard for real-time monitoring and historical data visualization.",
+    "image": "/assets/projects/traffic.jpg",
+    "images": [
+      "/assets/projects/traffic.jpg"
+    ],
+    "technologies": ["Arduino", "Python", "IoT", "C", "MATLAB", "Sensors"],
+    "category": "IoT / Embedded",
+    "featured": true,
+    "githubUrl": "https://github.com/mubeennajma/traffic-monitor",
+    "liveUrl": "#",
+    "features": [
+      "Real-time vehicle density detection",
+      "Dynamic signal timing adjustment",
+      "Multi-intersection coordination",
+      "Web dashboard for monitoring",
+      "Historical data analytics",
+      "Alert system for traffic incidents"
+    ],
+    "challenges": "Synchronizing multiple sensor nodes across intersections with minimal latency while maintaining accurate vehicle count in high-density traffic scenarios required optimizing the embedded firmware and communication protocols.",
+    "status": "Completed",
+    "year": "2023"
+  },
+  {
+    "id": "line-follower",
+    "title": "Autonomous Line Following Robot",
+    "shortDescription": "An autonomous robot that navigates complex paths using IR sensors and a PID controller implemented on Arduino.",
+    "description": "A fully autonomous line-following robot designed and built using Arduino Uno, IR sensors, and a custom chassis. Implements a PID (Proportional-Integral-Derivative) control algorithm for smooth navigation and accurate path following. The robot can handle curves, intersections, and speed variations automatically.",
+    "image": "/assets/projects/robot.jpg",
+    "images": [
+      "/assets/projects/robot.jpg"
+    ],
+    "technologies": ["Arduino", "C", "PID Control", "IR Sensors", "Motor Driver", "Embedded Systems"],
+    "category": "Embedded Systems",
+    "featured": false,
+    "githubUrl": "https://github.com/mubeennajma/line-follower",
+    "liveUrl": "#",
+    "features": [
+      "PID controller for smooth navigation",
+      "5-sensor IR array for path detection",
+      "Automatic speed regulation",
+      "Intersection detection and handling",
+      "Obstacle avoidance capability",
+      "Real-time tuning via serial interface"
+    ],
+    "challenges": "Tuning PID constants for optimal performance across different track surfaces and lighting conditions required extensive empirical testing and the development of a serial monitor-based live tuning interface.",
+    "status": "Completed",
+    "year": "2023"
+  }
+]

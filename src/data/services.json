@@ -1,0 +1,74 @@
+[
+  {
+    "id": "web-dev",
+    "title": "Web Development",
+    "icon": "Globe",
+    "description": "End-to-end web application development — from pixel-perfect frontends to robust, scalable backends. I craft performant, accessible, and visually stunning web experiences.",
+    "features": ["Responsive Design", "Performance Optimization", "SEO", "PWA"],
+    "color": "from-blue-500 to-cyan-500",
+    "technologies": ["React", "Node.js", "TypeScript", "MySQL"]
+  },
+  {
+    "id": "backend",
+    "title": "Backend Development",
+    "icon": "Server",
+    "description": "Designing and building secure, scalable backend systems with RESTful APIs, database architecture, and server-side business logic using Java and Node.js.",
+    "features": ["REST APIs", "Authentication", "Database Design", "Microservices"],
+    "color": "from-purple-500 to-indigo-500",
+    "technologies": ["Java", "Spring Boot", "Node.js", "MySQL"]
+  },
+  {
+    "id": "frontend",
+    "title": "Frontend Development",
+    "icon": "Layout",
+    "description": "Creating beautiful, interactive user interfaces using modern frontend frameworks. Focused on smooth animations, accessibility, and excellent user experience.",
+    "features": ["React", "Animations", "Accessibility", "Component Design"],
+    "color": "from-pink-500 to-rose-500",
+    "technologies": ["React", "HTML5", "CSS3", "Bootstrap"]
+  },
+  {
+    "id": "iot",
+    "title": "IoT Solutions",
+    "icon": "Wifi",
+    "description": "Building Internet of Things solutions from sensor to cloud. I design embedded firmware, integrate hardware sensors, and connect devices to web dashboards.",
+    "features": ["Sensor Integration", "Firmware Development", "Data Visualization", "Automation"],
+    "color": "from-green-500 to-emerald-500",
+    "technologies": ["Arduino", "C", "Python", "MQTT"]
+  },
+  {
+    "id": "embedded",
+    "title": "Embedded Systems",
+    "icon": "Cpu",
+    "description": "Developing embedded software for microcontrollers and FPGAs. Experienced in real-time control systems, motor control, and hardware interfacing.",
+    "features": ["Microcontroller Programming", "RTOS", "Hardware Interfacing", "PID Control"],
+    "color": "from-amber-500 to-orange-500",
+    "technologies": ["Arduino", "C", "Verilog", "MATLAB"]
+  },
+  {
+    "id": "java-apps",
+    "title": "Java Applications",
+    "icon": "Code2",
+    "description": "Building enterprise-grade Java applications with clean architecture, design patterns, and industry best practices using Core Java, Java EE, and Spring Boot.",
+    "features": ["Spring Boot", "Design Patterns", "JUnit Testing", "Maven/Gradle"],
+    "color": "from-red-500 to-orange-500",
+    "technologies": ["Java", "Spring Boot", "Hibernate", "Maven"]
+  },
+  {
+    "id": "api-dev",
+    "title": "API Development",
+    "icon": "Zap",
+    "description": "Designing and documenting RESTful APIs following OpenAPI standards. Ensuring security, rate limiting, versioning, and comprehensive documentation.",
+    "features": ["REST API Design", "API Security", "Documentation", "Rate Limiting"],
+    "color": "from-violet-500 to-purple-500",
+    "technologies": ["Node.js", "Java", "Postman", "Swagger"]
+  },
+  {
+    "id": "database",
+    "title": "Database Design",
+    "icon": "Database",
+    "description": "Architecting efficient database schemas, optimizing queries, and ensuring data integrity. Experience with relational databases and ORM frameworks.",
+    "features": ["Schema Design", "Query Optimization", "Data Normalization", "ORM"],
+    "color": "from-teal-500 to-cyan-500",
+    "technologies": ["MySQL", "Hibernate", "JPA", "SQL"]
+  }
+]

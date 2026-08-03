@@ -1,0 +1,72 @@
+[
+  {
+    "id": "getting-started-react",
+    "title": "Getting Started with React 19: What's New and Exciting",
+    "slug": "getting-started-react-19",
+    "excerpt": "React 19 brings revolutionary changes including Server Components, the new compiler, and improved hooks. Here's everything you need to know.",
+    "content": "react19.md",
+    "author": "Shaik Mubeen Najma",
+    "date": "2024-03-15",
+    "readTime": "8 min",
+    "category": "Web Development",
+    "tags": ["React", "JavaScript", "Frontend"],
+    "featured": true,
+    "coverImage": "/assets/blog/react19.jpg"
+  },
+  {
+    "id": "arduino-iot",
+    "title": "Building Your First IoT Project with Arduino",
+    "slug": "arduino-iot-beginners-guide",
+    "excerpt": "A comprehensive step-by-step guide to building your first Internet of Things project with Arduino, sensors, and cloud connectivity.",
+    "content": "arduino-iot.md",
+    "author": "Shaik Mubeen Najma",
+    "date": "2024-02-20",
+    "readTime": "12 min",
+    "category": "IoT & Embedded",
+    "tags": ["Arduino", "IoT", "Embedded Systems", "Hardware"],
+    "featured": true,
+    "coverImage": "/assets/blog/arduino.jpg"
+  },
+  {
+    "id": "java-spring-boot",
+    "title": "Building REST APIs with Spring Boot: A Practical Guide",
+    "slug": "java-spring-boot-rest-api",
+    "excerpt": "Learn how to build production-ready RESTful APIs using Spring Boot, JPA, and MySQL with proper error handling and security.",
+    "content": "spring-boot.md",
+    "author": "Shaik Mubeen Najma",
+    "date": "2024-01-10",
+    "readTime": "10 min",
+    "category": "Backend",
+    "tags": ["Java", "Spring Boot", "REST API", "MySQL"],
+    "featured": false,
+    "coverImage": "/assets/blog/springboot.jpg"
+  },
+  {
+    "id": "vlsi-design",
+    "title": "Introduction to VLSI Design: From Concept to Chip",
+    "slug": "introduction-vlsi-design",
+    "excerpt": "Explore the fascinating world of VLSI chip design — from RTL coding in Verilog to synthesis, place-and-route, and tape-out.",
+    "content": "vlsi.md",
+    "author": "Shaik Mubeen Najma",
+    "date": "2023-11-05",
+    "readTime": "15 min",
+    "category": "Electronics",
+    "tags": ["VLSI", "Verilog", "FPGA", "Electronics"],
+    "featured": false,
+    "coverImage": "/assets/blog/vlsi.jpg"
+  },
+  {
+    "id": "full-stack-career",
+    "title": "My Journey into Full Stack Development as an ECE Student",
+    "slug": "ece-to-full-stack-journey",
+    "excerpt": "How I transitioned from an electronics background to becoming a full stack developer — the resources, challenges, and lessons learned.",
+    "content": "journey.md",
+    "author": "Shaik Mubeen Najma",
+    "date": "2023-09-18",
+    "readTime": "6 min",
+    "category": "Career",
+    "tags": ["Career", "Full Stack", "ECE", "Learning"],
+    "featured": true,
+    "coverImage": "/assets/blog/journey.jpg"
+  }
+]

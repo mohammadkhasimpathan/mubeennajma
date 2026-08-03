@@ -1,0 +1,44 @@
+[
+  {
+    "id": "btech",
+    "degree": "Bachelor of Technology",
+    "field": "Electronics & Communication Engineering",
+    "institution": "Jawaharlal Nehru Technological University",
+    "shortInstitution": "JNTU Hyderabad",
+    "startYear": "2020",
+    "endYear": "2024",
+    "grade": "7.8 CGPA",
+    "description": "Completed B.Tech in Electronics & Communication Engineering with specialization in Embedded Systems, VLSI Design, and Digital Signal Processing. Actively participated in technical fests, hackathons, and the NSS program.",
+    "highlights": ["VLSI Design", "Embedded Systems", "Digital Signal Processing", "IoT", "Microcontrollers", "Communication Systems"],
+    "type": "graduation",
+    "color": "from-purple-500 to-blue-500"
+  },
+  {
+    "id": "intermediate",
+    "degree": "Intermediate (12th Grade)",
+    "field": "MPC (Mathematics, Physics, Chemistry)",
+    "institution": "Sri Chaitanya Junior College",
+    "shortInstitution": "Sri Chaitanya Jr. College",
+    "startYear": "2018",
+    "endYear": "2020",
+    "grade": "94.5%",
+    "description": "Completed intermediate education with Mathematics, Physics, and Chemistry as core subjects. Achieved distinction with strong performance in Mathematics and Physics.",
+    "highlights": ["Mathematics", "Physics", "Chemistry"],
+    "type": "intermediate",
+    "color": "from-blue-500 to-cyan-500"
+  },
+  {
+    "id": "ssc",
+    "degree": "SSC (10th Grade)",
+    "field": "General Studies",
+    "institution": "Zilla Parishad High School",
+    "shortInstitution": "ZP High School",
+    "startYear": "2017",
+    "endYear": "2018",
+    "grade": "9.2 GPA",
+    "description": "Completed Secondary School Certificate with excellent academic performance. Developed foundational skills in mathematics, science, and language studies.",
+    "highlights": ["Mathematics", "Science", "Social Studies"],
+    "type": "school",
+    "color": "from-green-500 to-teal-500"
+  }
+]

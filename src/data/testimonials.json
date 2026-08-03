@@ -1,0 +1,52 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Rajesh Kumar",
+    "role": "Senior Java Developer",
+    "company": "ExcelR Solutions",
+    "avatar": "/assets/testimonials/avatar1.jpg",
+    "rating": 5,
+    "testimonial": "Mubeen is one of the most dedicated interns I've mentored. His grasp of Java concepts and ability to quickly adapt to Spring Boot ecosystem was impressive. He consistently delivered quality work and showed great initiative in solving complex problems.",
+    "relation": "Mentor at ExcelR Solutions"
+  },
+  {
+    "id": "testimonial-2",
+    "name": "Priya Sharma",
+    "role": "VLSI Design Engineer",
+    "company": "Skill Dzire",
+    "avatar": "/assets/testimonials/avatar2.jpg",
+    "rating": 5,
+    "testimonial": "Working with Mubeen during the VLSI internship was a pleasure. His understanding of digital design principles and enthusiasm for learning Verilog made him stand out. He has a great future in embedded systems and chip design.",
+    "relation": "Supervisor at Skill Dzire"
+  },
+  {
+    "id": "testimonial-3",
+    "name": "Aakash Reddy",
+    "role": "Full Stack Developer",
+    "company": "Tech Startup",
+    "avatar": "/assets/testimonials/avatar3.jpg",
+    "rating": 5,
+    "testimonial": "I collaborated with Mubeen on the E-Commerce project and was impressed by his work ethic and technical skills. He brought both frontend elegance and backend efficiency to the table. Highly recommended for any development role.",
+    "relation": "Project Collaborator"
+  },
+  {
+    "id": "testimonial-4",
+    "name": "Dr. Suresh Babu",
+    "role": "Associate Professor, ECE",
+    "company": "JNTU Hyderabad",
+    "avatar": "/assets/testimonials/avatar4.jpg",
+    "rating": 5,
+    "testimonial": "Mubeen consistently demonstrated exceptional analytical skills and a passion for applied electronics. His capstone project on the Traffic Monitoring System showcased innovative thinking and excellent execution of IoT concepts.",
+    "relation": "Academic Advisor"
+  },
+  {
+    "id": "testimonial-5",
+    "name": "Fatima Shaikh",
+    "role": "NSS Program Officer",
+    "company": "JNTU Hyderabad",
+    "avatar": "/assets/testimonials/avatar5.jpg",
+    "rating": 4,
+    "testimonial": "As an NSS volunteer, Mubeen showed outstanding leadership and commitment to community service. He organized multiple social awareness camps and consistently motivated fellow volunteers. His dedication is truly commendable.",
+    "relation": "NSS Program Officer"
+  }
+]

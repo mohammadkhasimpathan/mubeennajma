@@ -1,0 +1,107 @@
+[
+  {
+    "name": "React",
+    "icon": "SiReact",
+    "color": "#61DAFB",
+    "category": "Frontend",
+    "url": "https://react.dev"
+  },
+  {
+    "name": "Node.js",
+    "icon": "SiNodedotjs",
+    "color": "#339933",
+    "category": "Backend",
+    "url": "https://nodejs.org"
+  },
+  {
+    "name": "Java",
+    "icon": "FaJava",
+    "color": "#f89820",
+    "category": "Language",
+    "url": "https://java.com"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "SiJavascript",
+    "color": "#F7DF1E",
+    "category": "Language",
+    "url": "https://developer.mozilla.org"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "color": "#3178C6",
+    "category": "Language",
+    "url": "https://typescriptlang.org"
+  },
+  {
+    "name": "Python",
+    "icon": "SiPython",
+    "color": "#3776AB",
+    "category": "Language",
+    "url": "https://python.org"
+  },
+  {
+    "name": "MySQL",
+    "icon": "SiMysql",
+    "color": "#4479A1",
+    "category": "Database",
+    "url": "https://mysql.com"
+  },
+  {
+    "name": "Arduino",
+    "icon": "SiArduino",
+    "color": "#00979D",
+    "category": "Hardware",
+    "url": "https://arduino.cc"
+  },
+  {
+    "name": "Git",
+    "icon": "SiGit",
+    "color": "#F05032",
+    "category": "Tool",
+    "url": "https://git-scm.com"
+  },
+  {
+    "name": "HTML5",
+    "icon": "SiHtml5",
+    "color": "#E34F26",
+    "category": "Frontend",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    "name": "CSS3",
+    "icon": "SiCss3",
+    "color": "#1572B6",
+    "category": "Frontend",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "SiBootstrap",
+    "color": "#7952B3",
+    "category": "Frontend",
+    "url": "https://getbootstrap.com"
+  },
+  {
+    "name": "Vite",
+    "icon": "SiVite",
+    "color": "#646CFF",
+    "category": "Tool",
+    "url": "https://vitejs.dev"
+  },
+  {
+    "name": "Spring Boot",
+    "icon": "SiSpringboot",
+    "color": "#6DB33F",
+    "category": "Backend",
+    "url": "https://spring.io"
+  },
+  {
+    "name": "Postman",
+    "icon": "SiPostman",
+    "color": "#FF6C37",
+    "category": "Tool",
+    "url": "https://postman.com"
+  }
+]

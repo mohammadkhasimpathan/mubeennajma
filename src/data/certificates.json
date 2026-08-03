@@ -1,0 +1,46 @@
+[
+  {
+    "id": "java-fullstack",
+    "title": "Java Full Stack Development",
+    "issuer": "ExcelR Solutions",
+    "date": "2024-06",
+    "description": "Certified in Java Full Stack Development covering Core Java, Advanced Java, Spring Boot, React, MySQL, and REST API development.",
+    "image": "/assets/certificates/java-fullstack.jpg",
+    "credentialUrl": "#",
+    "skills": ["Java", "Spring Boot", "React", "MySQL", "REST API"],
+    "color": "from-orange-500 to-red-500"
+  },
+  {
+    "id": "vlsi",
+    "title": "VLSI Design & Verification",
+    "issuer": "Skill Dzire",
+    "date": "2023-09",
+    "description": "Certification in VLSI Design covering Verilog HDL, FPGA implementation, digital circuit design, and verification methodologies.",
+    "image": "/assets/certificates/vlsi.jpg",
+    "credentialUrl": "#",
+    "skills": ["Verilog", "FPGA", "VLSI", "Digital Design"],
+    "color": "from-purple-500 to-indigo-500"
+  },
+  {
+    "id": "iot",
+    "title": "Internet of Things (IoT) Fundamentals",
+    "issuer": "NPTEL / IIT Kharagpur",
+    "date": "2023-04",
+    "description": "Completed NPTEL certification on IoT fundamentals covering embedded systems, sensor networks, protocols, and cloud integration.",
+    "image": "/assets/certificates/iot.jpg",
+    "credentialUrl": "#",
+    "skills": ["IoT", "Arduino", "Sensors", "Cloud Computing"],
+    "color": "from-green-500 to-teal-500"
+  },
+  {
+    "id": "python",
+    "title": "Python Programming",
+    "issuer": "Coursera / Google",
+    "date": "2022-08",
+    "description": "Completed Google's Python programming course covering data structures, algorithms, file I/O, and scripting fundamentals.",
+    "image": "/assets/certificates/python.jpg",
+    "credentialUrl": "#",
+    "skills": ["Python", "Data Structures", "Algorithms"],
+    "color": "from-blue-500 to-cyan-500"
+  }
+]

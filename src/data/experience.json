@@ -1,0 +1,68 @@
+[
+  {
+    "id": "excelr",
+    "company": "ExcelR Solutions",
+    "role": "Java Full Stack Developer Intern",
+    "type": "Internship",
+    "location": "Hyderabad, Telangana",
+    "startDate": "2024-01",
+    "endDate": "2024-06",
+    "current": false,
+    "description": "Completed an intensive Java Full Stack Development internship at ExcelR Solutions, one of India's leading training institutes. Gained hands-on experience building enterprise-grade web applications using Java EE technologies, Spring Boot, and modern frontend frameworks.",
+    "responsibilities": [
+      "Developed RESTful APIs using Spring Boot and deployed on Apache Tomcat",
+      "Built responsive frontends with HTML, CSS, Bootstrap, and JavaScript",
+      "Designed and optimized MySQL database schemas for application data",
+      "Implemented CRUD operations and user authentication using JWT",
+      "Collaborated with mentors on real-world project development",
+      "Participated in code reviews and agile sprint ceremonies"
+    ],
+    "technologies": ["Java", "Spring Boot", "MySQL", "React", "REST API", "HTML", "CSS", "Bootstrap", "Git"],
+    "logoColor": "#FF6B35",
+    "color": "from-orange-500 to-red-500"
+  },
+  {
+    "id": "skilldzire",
+    "company": "Skill Dzire",
+    "role": "VLSI Design Intern",
+    "type": "Internship",
+    "location": "Remote",
+    "startDate": "2023-06",
+    "endDate": "2023-09",
+    "current": false,
+    "description": "Undertook a focused VLSI Design internship at Skill Dzire, gaining practical experience in digital circuit design, FPGA programming, and hardware description languages. Worked on chip-level design projects using industry-standard EDA tools.",
+    "responsibilities": [
+      "Designed and simulated digital circuits using Verilog HDL",
+      "Implemented combinational and sequential logic circuits on FPGA",
+      "Conducted timing analysis and optimized for setup/hold violations",
+      "Used Xilinx Vivado and ModelSim for design verification",
+      "Worked on ASIC design flow from RTL to gate-level netlist",
+      "Documented design specifications and test plans"
+    ],
+    "technologies": ["Verilog", "VHDL", "Xilinx Vivado", "ModelSim", "FPGA", "MATLAB"],
+    "logoColor": "#8B5CF6",
+    "color": "from-purple-500 to-indigo-500"
+  },
+  {
+    "id": "scr",
+    "company": "South Central Railways",
+    "role": "Telecommunications Engineering Intern",
+    "type": "Internship",
+    "location": "Secunderabad, Telangana",
+    "startDate": "2022-12",
+    "endDate": "2023-01",
+    "current": false,
+    "description": "Completed a telecommunications internship at South Central Railways, gaining exposure to real-world railway communication infrastructure. Studied and observed the operation of signaling systems, optical fiber networks, and telecommunications equipment used in India's railway network.",
+    "responsibilities": [
+      "Observed and studied railway signaling and interlocking systems",
+      "Assisted in network maintenance for optical fiber communication lines",
+      "Learned about SCADA systems used for train monitoring",
+      "Studied GSM-R (Railway) communication protocols",
+      "Documented observations of telecom infrastructure",
+      "Participated in safety briefings and field visits"
+    ],
+    "technologies": ["Telecommunications", "Optical Fiber", "SCADA", "GSM-R", "Signal Processing"],
+    "logoColor": "#10B981",
+    "color": "from-green-500 to-teal-500"
+  }
+]

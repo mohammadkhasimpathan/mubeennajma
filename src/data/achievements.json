@@ -1,0 +1,42 @@
+[
+  {
+    "id": "nss",
+    "title": "NSS Volunteer",
+    "organization": "National Service Scheme, JNTU",
+    "icon": "Heart",
+    "description": "Active NSS volunteer for 2 years, participating in community development, social awareness campaigns, blood donation drives, and rural development programs.",
+    "stat": "200+",
+    "statLabel": "Service Hours",
+    "color": "from-red-500 to-pink-500"
+  },
+  {
+    "id": "leadership",
+    "title": "Tech Event Organizer",
+    "organization": "College Technical Fest",
+    "icon": "Users",
+    "description": "Organized and led technical events including coding competitions, robotics workshops, and project exhibitions at the college annual technical festival.",
+    "stat": "500+",
+    "statLabel": "Students Reached",
+    "color": "from-blue-500 to-indigo-500"
+  },
+  {
+    "id": "problem-solving",
+    "title": "Competitive Programmer",
+    "organization": "HackerRank / LeetCode",
+    "icon": "Trophy",
+    "description": "Solved 150+ coding problems across HackerRank and LeetCode, achieving 4-star rating in Java on HackerRank. Participated in multiple online coding contests.",
+    "stat": "150+",
+    "statLabel": "Problems Solved",
+    "color": "from-yellow-500 to-amber-500"
+  },
+  {
+    "id": "mentor",
+    "title": "Peer Mentor",
+    "organization": "College Study Group",
+    "icon": "BookOpen",
+    "description": "Mentored junior students in programming fundamentals, Arduino projects, and academic subjects. Conducted weekly study sessions and project guidance.",
+    "stat": "30+",
+    "statLabel": "Students Mentored",
+    "color": "from-green-500 to-emerald-500"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "name": "Shaik Mubeen Najma",
+  "tagline": "Electronics & Communication Engineer",
+  "roles": [
+    "Full Stack Developer",
+    "Embedded Systems Enthusiast",
+    "IoT Developer",
+    "Java Developer",
+    "React Developer"
+  ],
+  "email": "mubeennajma@gmail.com",
+  "phone": "+91 9876543210",
+  "location": "Hyderabad, Telangana, India",
+  "bio": "I'm a B.Tech Electronics & Communication Engineering graduate passionate about building innovative digital solutions. I bridge the gap between hardware and software — from designing embedded systems and IoT devices to crafting full-stack web applications. With hands-on experience from internships at ExcelR Solutions, Skill Dzire, and South Central Railways, I bring both technical depth and practical problem-solving to every project.",
+  "shortBio": "ECE graduate | Full Stack Developer | Embedded Systems & IoT Enthusiast | Java & React Developer",
+  "resumeUrl": "/assets/resume.pdf",
+  "profileImage": "/assets/profile.jpg",
+  "social": {
+    "github": "https://github.com/mubeennajma",
+    "linkedin": "https://linkedin.com/in/mubeennajma",
+    "email": "mailto:mubeennajma@gmail.com",
+    "twitter": "https://twitter.com/mubeennajma"
+  },
+  "stats": [
+    { "label": "Projects Completed", "value": 10, "suffix": "+" },
+    { "label": "Internships", "value": 3, "suffix": "" },
+    { "label": "Hackathons", "value": 2, "suffix": "" },
+    { "label": "Skills Mastered", "value": 15, "suffix": "+" }
+  ],
+  "currentlyLearning": [
+    "Next.js 15",
+    "Cloud Computing (AWS)",
+    "Machine Learning",
+    "Docker & Kubernetes",
+    "Advanced VLSI Design"
+  ],
+  "availability": "Open to opportunities",
+  "yearsOfExperience": 2,
+  "siteUrl": "https://mubeen-portfolio.onrender.com",
+  "googleAnalyticsId": ""
+}

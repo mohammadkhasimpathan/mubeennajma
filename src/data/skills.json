@@ -1,0 +1,59 @@
+[
+  {
+    "category": "Languages",
+    "icon": "Code",
+    "skills": [
+      { "name": "Java", "level": 85, "icon": "FaJava", "color": "#f89820" },
+      { "name": "JavaScript", "level": 82, "icon": "SiJavascript", "color": "#f7df1e" },
+      { "name": "Python", "level": 70, "icon": "FaPython", "color": "#3776AB" },
+      { "name": "C", "level": 75, "icon": "SiC", "color": "#A8B9CC" },
+      { "name": "SQL", "level": 78, "icon": "SiMysql", "color": "#4479A1" }
+    ]
+  },
+  {
+    "category": "Frontend",
+    "icon": "Layout",
+    "skills": [
+      { "name": "React", "level": 80, "icon": "FaReact", "color": "#61DAFB" },
+      { "name": "HTML5", "level": 90, "icon": "FaHtml5", "color": "#E34F26" },
+      { "name": "CSS3", "level": 85, "icon": "FaCss3Alt", "color": "#1572B6" },
+      { "name": "Bootstrap", "level": 80, "icon": "SiBootstrap", "color": "#7952B3" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "icon": "Server",
+    "skills": [
+      { "name": "Node.js", "level": 75, "icon": "FaNodeJs", "color": "#339933" },
+      { "name": "REST API", "level": 78, "icon": "SiPostman", "color": "#FF6C37" },
+      { "name": "Servlet/JSP", "level": 70, "icon": "FaJava", "color": "#f89820" }
+    ]
+  },
+  {
+    "category": "Databases",
+    "icon": "Database",
+    "skills": [
+      { "name": "MySQL", "level": 80, "icon": "SiMysql", "color": "#4479A1" }
+    ]
+  },
+  {
+    "category": "Tools",
+    "icon": "Tool",
+    "skills": [
+      { "name": "Git", "level": 82, "icon": "FaGitAlt", "color": "#F05032" },
+      { "name": "Postman", "level": 78, "icon": "SiPostman", "color": "#FF6C37" },
+      { "name": "Eclipse IDE", "level": 75, "icon": "SiEclipseide", "color": "#2C2255" },
+      { "name": "VS Code", "level": 88, "icon": "SiVisualstudiocode", "color": "#007ACC" }
+    ]
+  },
+  {
+    "category": "Embedded & IoT",
+    "icon": "Cpu",
+    "skills": [
+      { "name": "Arduino", "level": 82, "icon": "SiArduino", "color": "#00979D" },
+      { "name": "IoT", "level": 75, "icon": "FaMicrochip", "color": "#8B5CF6" },
+      { "name": "VLSI", "level": 65, "icon": "FaMicrochip", "color": "#10B981" },
+      { "name": "MATLAB", "level": 68, "icon": "SiMatlabr2024b", "color": "#E16737" }
+    ]
+  }
+]

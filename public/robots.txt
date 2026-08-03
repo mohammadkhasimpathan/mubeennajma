@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mubeen-portfolio.onrender.com/sitemap.xml
+
+# Crawl-delay: 10
+# Disallow: /api/
