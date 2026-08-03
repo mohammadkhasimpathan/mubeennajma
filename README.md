@@ -59,15 +59,26 @@ All content is managed via JSON files in the `src/data/` directory:
 
 This repository is pre-configured for seamless deployment as a **Static Site** on [Render](https://render.com).
 
-### Instructions:
+### Method 1: The Quick Way (Using Blueprint)
 
-1. Push your repository to GitHub.
-2. Log into Render and create a new **Static Site**.
-3. Connect your GitHub repository.
-4. Render will automatically detect the `render.yaml` configuration.
-5. If setting up manually, use the following settings:
+Since the repository includes a `render.yaml` file, Render can automatically detect your settings and deploy it instantly as Infrastructure as Code.
+
+1. Go to [Render.com](https://render.com/) and sign in with your GitHub account.
+2. Click the **"New +"** button in the top right corner.
+3. Select **"Blueprint"** from the dropdown menu.
+4. Connect your GitHub account and select this repository.
+5. Render will read the `render.yaml` file, detect that it's a Static Site, and automatically apply the build commands, publish directory, and routing rules.
+6. Click **"Apply"** at the bottom of the screen.
+7. **Important**: Once the Blueprint is created, go to the **Environment** tab in your Render dashboard and add your EmailJS and Google Analytics keys (from `.env`).
+
+### Method 2: Manual Setup (Static Site)
+
+1. Go to Render.com and click **"New +"** -> **"Static Site"**.
+2. Select this repository.
+3. Use the following settings:
    - **Build Command**: `npm install && npm run build`
    - **Publish Directory**: `dist`
-6. Add your environment variables (from `.env`) in the Render dashboard.
+4. Under **Advanced**, add your environment variables (`VITE_EMAILJS_SERVICE_ID`, etc.).
+5. Click **Create Static Site**.
 
-The deployment includes an `_redirects` file to handle React Router SPA routing natively on Render.
+*Note: The deployment includes an `_redirects` file to handle React Router SPA routing natively on Render, preventing 404 errors on page refresh.*
