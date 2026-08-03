@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* ===================== HERO ===================== */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
+      <section className="relative min-h-[100dvh] flex flex-col justify-center pt-32 pb-16 overflow-hidden px-4">
         {/* Animated blobs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 animate-blob"
           style={{ background: 'radial-gradient(circle, #8B5CF6, transparent 70%)' }} />
@@ -101,7 +101,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black font-['Space_Grotesk'] tracking-tighter leading-[1.1] mb-6"
+            className="text-4xl min-[360px]:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-['Space_Grotesk'] tracking-tighter leading-[1.1] mb-6"
           >
             <span className="text-white">Shaik </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] via-[#6D28D9] to-[#3B82F6] filter drop-shadow-lg">
@@ -126,7 +126,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl md:text-2xl font-semibold mb-10 h-8 font-['Space_Grotesk']"
+            className="text-xl md:text-2xl font-semibold mb-12 h-8 font-['Space_Grotesk']"
           >
             <span className="gradient-text">{typedRole}</span>
             <span className="animate-pulse text-violet-400">|</span>
@@ -137,12 +137,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex flex-wrap items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto gap-3 sm:gap-4"
           >
             <a
               href={profile.resumeUrl}
               download="Shaik_Mubeen_Najma_Resume.pdf"
-              className="flex items-center gap-2 px-6 py-3 rounded-xl text-white font-medium transition-all hover:opacity-90 hover:shadow-lg"
+              className="flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 rounded-xl text-white font-medium transition-all hover:opacity-90 hover:shadow-lg"
               style={{ background: 'linear-gradient(135deg, #8B5CF6, #6D28D9)' }}
             >
               <Download size={18} />
@@ -150,14 +150,14 @@ export default function Home() {
             </a>
             <Link
               to="/projects"
-              className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium glass gradient-border text-white transition-all hover:glass-hover"
+              className="flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 rounded-xl font-medium glass gradient-border text-white transition-all hover:glass-hover"
             >
               <Eye size={18} />
               View Projects
             </Link>
             <Link
               to="/contact"
-              className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-violet-400 border border-violet-500/30 hover:bg-violet-500/10 transition-all"
+              className="flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 rounded-xl font-medium text-violet-400 border border-violet-500/30 hover:bg-violet-500/10 transition-all"
             >
               <Mail size={18} />
               Hire Me

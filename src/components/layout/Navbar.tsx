@@ -33,6 +33,21 @@ export default function Navbar({ onCommandPalette }: NavbarProps) {
 
   useEffect(() => { setMobileOpen(false); }, [location]);
 
+  // Lock body scroll and handle Escape key when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') setMobileOpen(false);
+      };
+      document.addEventListener('keydown', handleEscape);
+      return () => {
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', handleEscape);
+      };
+    }
+  }, [mobileOpen]);
+
   return (
     <>
       <motion.nav
@@ -137,47 +152,67 @@ export default function Navbar({ onCommandPalette }: NavbarProps) {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 top-20 z-40 mx-4 rounded-2xl glass border border-white/8 py-4 px-4 lg:hidden"
-            style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}
+            className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm lg:hidden"
+            onClick={() => setMobileOpen(false)}
           >
-            <ul className="flex flex-col gap-1">
-              {navLinks.map(link => {
-                const isActive = location.pathname === link.href;
-                return (
-                  <li key={link.href}>
-                    <Link
-                      to={link.href}
-                      className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
-                        isActive
-                          ? 'bg-violet-500/20 text-white'
-                          : 'text-slate-400 hover:text-white hover:bg-white/5'
-                      }`}
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                );
-              })}
-              <li className="pt-2 border-t border-white/6">
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute right-0 top-0 bottom-0 w-64 max-w-[80vw] bg-[rgb(15,15,25)] border-l border-white/10 p-5 flex flex-col shadow-2xl"
+              onClick={e => e.stopPropagation()}
+            >
+              <div className="flex justify-end mb-6">
+                <button
+                  onClick={() => setMobileOpen(false)}
+                  className="w-9 h-9 rounded-xl glass flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+                  aria-label="Close menu"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+
+              <ul className="flex flex-col gap-1.5 flex-1 overflow-y-auto no-scrollbar">
+                {navLinks.map(link => {
+                  const isActive = location.pathname === link.href;
+                  return (
+                    <li key={link.href}>
+                      <Link
+                        to={link.href}
+                        className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                          isActive
+                            ? 'bg-violet-500/20 text-white border border-violet-500/30'
+                            : 'text-slate-400 hover:text-white hover:bg-white/5'
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+
+              <div className="pt-6 mt-4 border-t border-white/10">
                 <a
                   href={profile.resumeUrl}
                   download="Shaik_Mubeen_Najma_Resume.pdf"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-white"
+                  className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-medium text-white transition-all hover:opacity-90"
                   style={{ background: 'linear-gradient(135deg, #8B5CF6, #6D28D9)' }}
                 >
-                  <Download size={14} />
+                  <Download size={15} />
                   Download Resume
                 </a>
-              </li>
-            </ul>
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
